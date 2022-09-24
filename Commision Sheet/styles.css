@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth ;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+.wrapper .sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15vw;
+    height: 100vh;
+    background: #000836;
+
+}
+
+.wrapper .sidebar h1{
+    color: antiquewhite;
+    text-align: center;
+    line-height: 90px;
+    border-bottom: 1px dotted rgba(81, 142, 255, 0.5);
+    
+}
+
+.wrapper .sidebar ul li{
+    list-style: none;
+    padding: 15px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(81, 142, 255, 0.5);
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+i{
+    margin-right: 8pxs;
+}
+
+.wrapper .sidebar .ul li:hover{
+    background-color: rgba(65, 188, 236, 0.5);
+}
+
+.wrapper .sidebar .contacts{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    display: flex;
+}
+
+.wrapper .sidebar .contacts a{
+    margin: 0 15px;
+    
+}
+
+.wrapper .index{
+    width: 85vw;
+    margin-left: 15vw;
+}
+
+
+section{
+    height: 100vh;
+    padding: 30px;
+
+}
+
+#home1{
+    background: linear-gradient(to bottom,#02328b,#293785);
+}
+
+#gallery2{
+    background: linear-gradient(to bottom,#293785,#3972a1);
+}
+
+#wips3{
+    background: linear-gradient(to bottom,#3972a1,#77b5b9);
+}
+
+#pricing4{
+    background: linear-gradient(to bottom,#77b5b9,#77b5b9);
+}
+
+#faq5{
+    background: linear-gradient(to bottom,#77b5b9,#02328b);
+}
+
+#home1 h2{
+    font-size: 60px;
+}
+
+#gallery2 h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#wips3 h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#pricing4 h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#pricing4 h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#home1 h3 {
+    
+    font-size: 100px;
+}
+
+
+
+
+
+
+
+#faq5 h20 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+
+}
+
+
+.collapse1 {
+    max-width: auto;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.collapse1 input{
+    display: none;
+}
+
+.collapse1 label {
+    position: relative;
+    font-weight: 600;
+    background:rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.07);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapse1 label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(arrow.svg) no-repeat 0 0;
+    transition: all 0.3 ease;
+}
+
+.collapse1 input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapse1-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 1;
+    transition: all 0.3 ease;
+
+}
+
+.collapse1 input:checked ~ .collapse1-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+}
+
+.collapse1-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#1c1c6b;
+    opacity: 1;
+    top: 0;
+}
+
+.collapse1-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+.collapse2 {
+    max-width: auto;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.collapse2 input{
+    display: none;
+}
+
+.collapse2 label {
+    position: relative;
+    font-weight: 600;
+    background:rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.07);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapse2 label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(arrow.svg) no-repeat 0 0;
+    transition: all 0.3 ease;
+}
+
+.collapse2 input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapse2-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 1;
+    transition: all 0.3 ease;
+
+}
+
+.collapse2 input:checked ~ .collapse2-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+}
+
+.collapse2-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#1c1c6b;
+    opacity: 1;
+    top: 0;
+}
+
+.collapse2-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.collapse3 {
+    max-width: auto;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.collapse3 input{
+    display: none;
+}
+
+.collapse3 label {
+    position: relative;
+    font-weight: 600;
+    background:rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.07);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapse3 label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(arrow.svg) no-repeat 0 0;
+    transition: all 0.3 ease;
+}
+
+.collapse3 input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapse3-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 1;
+    transition: all 0.3 ease;
+
+}
+
+.collapse3 input:checked ~ .collapse3-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+}
+
+.collapse3-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#1c1c6b;
+    opacity: 1;
+    top: 0;
+}
+
+.collapse3-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.collapse4 {
+    max-width: auto;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.collapse4 input{
+    display: none;
+}
+
+.collapse4 label {
+    position: relative;
+    font-weight: 600;
+    background:rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.07);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapse4 label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(arrow.svg) no-repeat 0 0;
+    transition: all 0.3 ease;
+}
+
+.collapse4 input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapse4-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 1;
+    transition: all 0.3 ease;
+
+}
+
+.collapse4 input:checked ~ .collapse4-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+}
+
+.collapse4-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#1c1c6b;
+    opacity: 1;
+    top: 0;
+}
+
+.collapse4-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.collapse5 {
+    max-width: auto;
+    overflow: hidden;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.collapse5 input{
+    display: none;
+}
+
+.collapse5 label {
+    position: relative;
+    font-weight: 600;
+    background:rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.07);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapse5 label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(arrow.svg) no-repeat 0 0;
+    transition: all 0.3 ease;
+}
+
+.collapse5 input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapse5-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 1;
+    transition: all 0.3 ease;
+
+}
+
+.collapse5 input:checked ~ .collapse5-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(195, 238, 255, 0.973);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+
+}
+
+.collapse5-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color:#1c1c6b;
+    opacity: 1;
+    top: 0;
+}
+
+.collapse5-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.copyright {
+    position: relative;
+    text-align: center;
+    padding-top: 200px;
+}
+
+
+
+
+#gallery2 h2{
+    position: relative;
+    text-align: center;
+}
+
+
+
+.gallery-page {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery{
+    position: relative;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(94, 161, 228);
+    cursor: pointer;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.price-page {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 10px;
+}
+
+.price{
+    position: relative;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(94, 161, 228);
+    cursor: pointer;
+}
+
+.price img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#wips3 h2{
+    position: relative;
+    text-align: center;
+}
+
+.order {
+    padding-top: 10px;
+  
+}
